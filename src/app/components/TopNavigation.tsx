@@ -19,8 +19,6 @@ const TopNavigation = () => {
           <span className="self-center whitespace-nowrap text-3xl font-bold text-cyan-900">
             EZY Taxis
           </span>
-
-          
         </div>
       </Navbar.Brand>
       <Navbar.Toggle />
@@ -33,6 +31,9 @@ const TopNavigation = () => {
         </Navbar.Link>
         <Navbar.Link href="/our-services" active={isActive("/our-services")}>
           Services
+        </Navbar.Link>
+        <Navbar.Link href="/bookings" active={isActive("/bookings")}>
+          Bookings
         </Navbar.Link>
         <Navbar.Link href="/contact" active={isActive("/contact")}>
           Contact

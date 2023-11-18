@@ -1,10 +1,10 @@
 "use client";
 
-import { Banner, Button, Card } from "flowbite-react";
-import BookingForm from "./components/BookingForm";
+import { Banner, Card } from "flowbite-react";
 import Testimonials from "./components/Testimonials";
-import BookingButtons from "./components/BookingButtons";
 import Image from "next/image";
+import BookingButtons from "./components/BookingButtons";
+import BookingForm from "./components/BookingForm";
 
 export default function Home() {
   return (
