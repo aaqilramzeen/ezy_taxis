@@ -1,8 +1,11 @@
 "use client";
 
+import AboutHead from "../components/meta/AboutHead";
+
 const AboutUs = () => {
   return (
     <main>
+      <AboutHead />
       <section className="mt-20">
         <h1 className="mb-3 text-4xl font-bold">About Us</h1>
         <hr />

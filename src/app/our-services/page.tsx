@@ -2,10 +2,12 @@
 
 import ServiceList from "../components/ServiceList";
 import BookingButtons from "../components/BookingButtons";
+import ServicesHead from "../components/meta/ServicesHead";
 
 const OurServices = () => {
   return (
     <main>
+      <ServicesHead />
       <section className="mt-20">
         <h1 className="mb-3 text-4xl font-bold">
           Explore Premium Taxi Services with EZY Taxis

@@ -5,10 +5,12 @@ import Testimonials from "./components/Testimonials";
 import Image from "next/image";
 import BookingButtons from "./components/BookingButtons";
 import BookingForm from "./components/BookingForm";
+import HomeHead from "./components/meta/HomeHead";
 
 export default function Home() {
   return (
     <main>
+      <HomeHead />
       <section className="mt-10 -mx-10 md:-mx-16 md:mt-2 lg:mt-0 relative main-banner">
         <Banner>
           <div className="w-full bg-slate-800 p-4 fixed z-40">

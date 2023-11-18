@@ -12,6 +12,35 @@ const dmSans = DM_Sans({
   subsets: ["latin-ext"],
 });
 
+export const metadata: Metadata = {
+  title:
+    "EZY Taxis: Fast, Affordable Taxis - Top Cab Service in Gatwick, Crawley, Horsham and Surrounding Areas",
+  description:
+    "Discover EZY Taxis – Your go-to taxi service in Gatwick, Crawley, Horsham, and surrounding areas. Experience fast, reliable, and affordable rides with our user-friendly booking app. Whether it's airport transfers, local journeys, or daily commutes, we ensure a comfortable and safe travel experience. Book your ride with ease and explore the best of local transportation.",
+  keywords: [
+    "EZY Taxis",
+    "Taxi Service Gatwick",
+    "Crawley Taxi Booking",
+    "Horsham Cab Service",
+    "Airport Transfers Gatwick",
+    "Local Taxi Service Crawley",
+    " Reliable Taxis Horsham",
+    "Affordable Cabs Gatwick Area",
+    "Taxi Near Me",
+    "Best Taxi Service Crawley",
+    "Horsham to Gatwick Taxi",
+    "Crawley to Horsham Cab",
+    "Quick Taxi Booking",
+    " 24/7 Taxi Service",
+    "Safe Taxi Gatwick",
+    "Professional Taxi Drivers Crawley",
+    "Gatwick Airport Taxi",
+    "Executive Taxis Horsham",
+    "Taxi App Crawley",
+    "Door-to-Door Taxi Service",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {

@@ -2,10 +2,12 @@
 
 import ContactEmail from "../components/ContactEmail";
 import ContactPhone from "../components/ContactPhone";
+import ContactHead from "../components/meta/ContactHead";
 
 const Contact = () => {
   return (
     <main>
+      <ContactHead />
       <section className="mt-20">
         <h1 className="mb-3 text-4xl font-bold">Contact Us</h1>
         <hr />
