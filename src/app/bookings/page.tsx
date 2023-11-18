@@ -9,11 +9,11 @@ const Bookings = () => {
     <main className="mt-20">
       <BookingsHead />
 
-      <div className="mt-5 flex">
-        <div className="w-6/12">
+      <div className="mt-5 flex flex-col lg:flex-row">
+        <div className="lg:w-6/12 mb-5">
           <FeatureList />
         </div>
-        <div className="w-6/12 flex justify-center">
+        <div className="lg:w-6/12 flex justify-center">
           <BookingForm />
         </div>
       </div>

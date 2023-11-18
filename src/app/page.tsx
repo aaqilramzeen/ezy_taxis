@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <section className="mt-10 -mx-10 md:-mx-16 md:mt-2 lg:mt-0 relative main-banner">
         <Banner>
-          <div className="w-full bg-slate-800 p-4 fixed z-50">
+          <div className="w-full bg-slate-800 p-4 fixed z-40">
             <div className="mx-auto">
               <p className="text-sm font-medium text-slate-200 text-center shadow-lg">
                 Exciting Changes on the Horizon! Our Website is Under

@@ -40,7 +40,7 @@ const BookingForm = () => {
         <TextInput id="drop" required disabled />
       </div>
 
-      <div className="flex gap-2">
+      <div className="flex flex-col md:flex-row gap-2">
         <div>
           <div className="mb-2 block">
             <Label htmlFor="date" value="Date" />
