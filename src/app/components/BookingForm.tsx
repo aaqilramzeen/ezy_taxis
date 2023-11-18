@@ -5,48 +5,39 @@ import { Button, Datepicker, Label, TextInput, Textarea } from "flowbite-react";
 const BookingForm = () => {
   return (
     <form className="m-3 p-5 flex max-w-md flex-col gap-2 shadow-lg rounded-lg bg-white">
-      <div className="flex gap-2">
-        <div>
-          <div className="mb-2 block">
-            <Label htmlFor="firstName" value="First Name" />
-          </div>
-          <TextInput id="firstName" required />
+      <div>
+        <div className="mb-2 block">
+          <Label htmlFor="fullName" value="Full Name" />
         </div>
-
-        <div>
-          <div className="mb-2 block">
-            <Label htmlFor="lastName" value="Last Name" />
-          </div>
-          <TextInput id="lastName" required />
-        </div>
+        <TextInput id="fullName" required disabled />
       </div>
 
       <div>
         <div className="mb-2 block">
           <Label htmlFor="phone" value="Phone" />
         </div>
-        <TextInput id="phone" required />
+        <TextInput id="phone" required disabled />
       </div>
 
       <div>
         <div className="mb-2 block">
           <Label htmlFor="email" value="Email" />
         </div>
-        <TextInput id="email" required />
+        <TextInput id="email" required disabled />
       </div>
 
       <div>
         <div className="mb-2 block">
           <Label htmlFor="pickup" value="Pickup Location" />
         </div>
-        <TextInput id="pickup" required />
+        <TextInput id="pickup" required disabled />
       </div>
 
       <div>
         <div className="mb-2 block">
           <Label htmlFor="drop" value="Drop Location" />
         </div>
-        <TextInput id="drop" required />
+        <TextInput id="drop" required disabled />
       </div>
 
       <div className="flex gap-2">
@@ -54,14 +45,14 @@ const BookingForm = () => {
           <div className="mb-2 block">
             <Label htmlFor="date" value="Date" />
           </div>
-          <Datepicker id="date" />
+          <Datepicker id="date" disabled />
         </div>
 
         <div className="grow">
           <div className="mb-2 block">
             <Label htmlFor="time" value="Time" />
           </div>
-          <TextInput id="time" type="time" required />
+          <TextInput id="time" type="time" required disabled />
         </div>
       </div>
 
@@ -69,11 +60,18 @@ const BookingForm = () => {
         <div className="mb-2 block">
           <Label htmlFor="notes" value="Notes" />
         </div>
-        <Textarea className="resize-none" id="notes" rows={2} required />
+        <Textarea
+          className="resize-none"
+          id="notes"
+          rows={2}
+          required
+          disabled
+        />
       </div>
 
-      <Button className="mt-3" type="submit">
-        <span className="mr-2">Make My Booking</span>
+      <Button className="mt-3" type="submit" disabled>
+        {/* <span className="mr-2">Make My Booking</span> */}
+        <span className="mr-2">Coming Soon</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

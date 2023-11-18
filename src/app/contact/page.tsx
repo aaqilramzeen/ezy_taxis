@@ -5,9 +5,9 @@ import ContactPhone from "../components/ContactPhone";
 
 const Contact = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
-      <section className="p-10 pb-0 w-full text-slate-700">
-        <h1 className="mb-3 pt-20 md:pt-0 text-4xl font-bold">Contact Us</h1>
+    <main>
+      <section className="mt-20">
+        <h1 className="mb-3 text-4xl font-bold">Contact Us</h1>
         <hr />
 
         <h2 className="mt-7 text-2xl">

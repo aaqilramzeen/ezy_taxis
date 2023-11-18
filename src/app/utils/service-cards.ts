@@ -61,4 +61,14 @@ export const serviceCards = [
       "Personalized Exploration",
     ],
   },
+  {
+    image_id: "GDokEYnOfnE",
+    title: "Student Transportation Solutions",
+    description:
+      "Discover top-tier student shuttle services designed for a hassle-free commute to and from school. Our reliable and secure student transportation ensures punctual arrivals and comfortable rides, prioritizing student well-being.",
+    keywords: [
+      "Student Transportation",
+      "School Transportation Services",
+    ],
+  },
 ];

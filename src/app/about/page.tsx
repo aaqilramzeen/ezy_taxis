@@ -1,14 +1,10 @@
 "use client";
 
-import ImageGallery from "../components/ImageGallery";
-
 const AboutUs = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
-      <section className="p-10 pb-0 w-full text-slate-700">
-        <h1 className="mb-3 pt-20 md:pt-0 text-4xl font-bold">
-          About Us
-        </h1>
+    <main>
+      <section className="mt-20">
+        <h1 className="mb-3 text-4xl font-bold">About Us</h1>
         <hr />
         <h2 className="mt-7 text-2xl">
           Welcome to EZY Taxis - Your Premier Choice for Convenient and Reliable
@@ -23,13 +19,13 @@ const AboutUs = () => {
         </p>
         <h3 className="mt-7 text-2xl font-bold">Who We Are</h3>
         <p className="mt-3">
-          EZY Taxis is a locally owned and operated transportation service
-          dedicated to providing our customers with safe, comfortable, and
-          affordable rides. Whether you&apos;re heading to the airport, a
-          business meeting, or a night out on the town, we&apos;ve got you
-          covered. Our fleet of well-maintained vehicles and a team of
-          professional drivers are ready to make your journey as smooth as
-          possible.
+          EZY Taxis stands as a premier transportation service, boasting over 10
+          years of expertise committed to delivering secure, cozy, and
+          cost-effective rides. Whether your destination is the airport, a
+          corporate engagement, or an evening in the city, we&apos;ve got your
+          transportation needs covered. Our fleet of meticulously maintained
+          vehicles, coupled with a team of skilled drivers, is poised to ensure
+          your travel experience is seamless and enjoyable.
         </p>
         <h3 className="mt-7 text-2xl font-bold">Our Mission</h3>
         <p className="mt-3">
