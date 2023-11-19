@@ -12,12 +12,15 @@ const TopNavigation = () => {
   };
 
   return (
-    <Navbar className="p-5 text-white fixed top-0 w-full z-50 shadow-2xl">
+    <Navbar className="p-3 text-white fixed top-0 w-full z-50 shadow-2xl">
       <Navbar.Brand as={Link} href="/">
-        <div className="lg:mb-0 flex items-center gap-3">
+        <div className="flex flex-col text-cyan-900">
           {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
-          <span className="self-center whitespace-nowrap text-3xl font-bold text-cyan-900">
+          <span className="text-3xl font-bold">
             EZY Taxis
+          </span>
+          <span>
+            Gatwick, Crawley, Horsham & Beyond
           </span>
         </div>
       </Navbar.Brand>

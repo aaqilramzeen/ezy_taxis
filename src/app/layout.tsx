@@ -67,16 +67,16 @@ export default function RootLayout({
         <div className="flex flex-col justify-between h-screen">
           <TopNavigation />
           <div className="p-10 md:p-16 text-slate-700">{children}</div>
-          <div className="px-10 fixed bottom-0 left-0">
+          <div className="px-10 fixed bottom-0 right-0">
             <a
               className="mr-2"
               href="https://wa.me/447749439999?text=Hi%2C%20I%20want%20to%20place%20a%20booking%20for%20a%20taxi."
               target="_blank"
             >
               <Image
-                src="/whatsappbooking.svg"
+                src="/whatsapp.svg"
                 alt="whatsapp logo"
-                width={240}
+                width={70}
                 height={30}
               />
             </a>

@@ -4,7 +4,7 @@ import { Button, Datepicker, Label, TextInput, Textarea } from "flowbite-react";
 
 const BookingForm = () => {
   return (
-    <form className="m-3 p-5 flex max-w-md flex-col gap-2 shadow-lg rounded-lg bg-white">
+    <form className="m-3 p-5 flex w-80 lg:w-96 flex-col gap-2 shadow-lg rounded-lg bg-white">
       <div>
         <div className="mb-2 block">
           <Label htmlFor="fullName" value="Full Name" />

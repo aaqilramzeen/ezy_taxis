@@ -13,7 +13,7 @@ export default function Home() {
       <HomeHead />
       <section className="mt-10 -mx-10 md:-mx-16 md:mt-2 lg:mt-0 relative main-banner">
         <Banner>
-          <div className="w-full bg-slate-800 p-4 fixed z-40">
+          <div className="w-full bg-slate-800 p-5 pt-7 lg:pt-10 fixed z-40">
             <div className="mx-auto">
               <p className="text-sm font-medium text-slate-200 text-center shadow-lg">
                 Exciting Changes on the Horizon! Our Website is Under
@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row items-center justify-between relative">
           <div className="pl-10 mt-5 md:mt-24 lg:w-6/12 relative">
-            <h1 className="mt-20 md:m-0 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-cyan-700 text-7xl font-black">
+            <h1 className="mt-24 md:m-0 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-cyan-700 text-7xl font-black">
               Precision in Every Mile, Comfort in Every Ride
             </h1>
             <h2 className="md:mt-0 text-slate-900 text-xl font-medium">
