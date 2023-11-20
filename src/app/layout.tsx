@@ -3,8 +3,8 @@ import { DM_Sans } from "next/font/google";
 import "./globals.scss";
 import TopNavigation from "./components/TopNavigation";
 import TheFooter from "./components/TheFooter";
-import Image from "next/image";
 import Script from "next/script";
+import WhatsappChat from "./components/WhatsappChat";
 
 const dmSans = DM_Sans({
   style: "normal",
@@ -67,7 +67,10 @@ export default function RootLayout({
         <div className="flex flex-col justify-between h-screen">
           <TopNavigation />
           <div className="p-10 md:p-16 text-slate-700">{children}</div>
-          <div className="px-10 fixed bottom-0 right-0">
+
+          <WhatsappChat />
+
+          {/* <div className="px-10 fixed bottom-0 right-0">
             <a
               className="mr-2"
               href="https://wa.me/447749439999?text=Hi%2C%20I%20want%20to%20place%20a%20booking%20for%20a%20taxi."
@@ -80,7 +83,7 @@ export default function RootLayout({
                 height={30}
               />
             </a>
-          </div>
+          </div> */}
 
           <TheFooter />
         </div>
