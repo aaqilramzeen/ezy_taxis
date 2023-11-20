@@ -18,8 +18,8 @@ const ContactEmail = () => {
         />
       </svg>
 
-      <a className="text-cyan-600" href="mailto:aaqil.ramzeen@gmail.com">
-        contact@ezytaxis.co.uk
+      <a className="text-cyan-600" href="mailto:contactezytaxis@gmail.com">
+        contactezytaxis@gmail.com
       </a>
     </div>
   );

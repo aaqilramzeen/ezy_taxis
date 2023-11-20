@@ -51,8 +51,8 @@ const Contact = () => {
         <p className="mt-2">
           Your feedback is important to us. Let us know about your experience
           with EZY Taxis by simply dropping us a mail on{" "}
-          <a className="text-cyan-600" href="mailto:aaqil.ramzeen@gmail.com">
-            contact@ezytaxis.co.uk
+          <a className="text-cyan-600" href="mailto:contactezytaxis@gmail.com">
+            contactezytaxis@gmail.com
           </a>
         </p>
 
