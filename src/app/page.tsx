@@ -1,29 +1,21 @@
 "use client";
 
-import { Banner, Card } from "flowbite-react";
+import { Button, Card } from "flowbite-react";
 import Testimonials from "./components/Testimonials";
 import Image from "next/image";
 import BookingButtons from "./components/BookingButtons";
 import BookingForm from "./components/BookingForm";
 import HomeHead from "./components/meta/HomeHead";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <main>
       <HomeHead />
-      <section className="mt-10 -mx-10 md:-mx-16 md:mt-2 lg:mt-0 relative main-banner">
-        <Banner>
-          <div className="w-full bg-slate-800 p-5 pt-7 lg:pt-10 fixed z-40">
-            <div className="mx-auto">
-              <p className="text-sm font-medium text-slate-200 text-center shadow-lg">
-                Exciting Changes on the Horizon! Our Website is Under
-                Construction for a Better Experience. Stay Tuned for a Revamped
-                Journey!
-              </p>
-            </div>
-          </div>
-        </Banner>
 
+      <section className="hidden md:block mt-10 -mx-10 md:-mx-16 md:mt-2 lg:mt-0 relative main-banner">
         <div className="flex flex-col lg:flex-row items-center justify-between relative">
           <div className="pl-10 mt-5 md:mt-24 lg:w-6/12 relative">
             <h1 className="mt-24 md:m-0 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-cyan-700 text-7xl font-black">
@@ -33,10 +25,10 @@ export default function Home() {
               Seamless Journeys, Unparalleled Service: Elevating Your Travel
               Experience Today
             </h2>
-            <div className="mt-7 flex flex-wrap gap-4">
+            <div className="mt-14 md:mt-7 flex flex-wrap gap-4">
               <div className="py-3 px-5 flex items-center justify-center gap-2 bg-slate-900 text-slate-300 rounded-md cursor-pointer">
                 <a href="tel:01293888999" className="mr-2 font-medium text-xl">
-                  Call Us On 01293 888 999
+                  Call For Crawley / Gatwick
                 </a>
               </div>
 
@@ -45,7 +37,7 @@ export default function Home() {
                   href="tel:01403888999"
                   className="mr-2 font-medium text-xl break-keep"
                 >
-                  Call Us On 01403 888 999
+                  Call For Horsham & Surrounding
                 </a>
               </div>
             </div>
@@ -58,10 +50,70 @@ export default function Home() {
       </section>
 
       <section className="mt-20">
-        <p className="lg:text-center text-3xl font-light leading-relaxed text-slate-800">
-          Welcome to EZY Taxis — Your Premier Taxi Service in Gatwick, Crawley,
-          Horsham, and Beyond!
+        <p className=" lg:text-center text-3xl font-light leading-relaxed text-slate-800">
+          <span className="hidden md:inline">Welcome to</span> EZY Taxis — Your
+          Premier Taxi Service in Gatwick, Crawley, Horsham, and Beyond!
         </p>
+
+        <div className="my-5 md:hidden flex flex-col gap-3">
+          <Button>
+            <a className="mr-2" href="tel:01293888999">
+              Call for Gatwick / Crawley
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              />
+            </svg>
+          </Button>
+
+          <Button>
+            <a className="mr-2" href="tel:01403888999">
+              Call for Horsham & Surrounding
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              />
+            </svg>
+          </Button>
+
+          <Button onClick={() => router.push("/bookings")}>
+            <span className="mr-2">Make a Booking Online</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </Button>
+        </div>
 
         <p className="mt-3 text-lg">
           At EZY Taxis, we take pride in providing more than just

@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <main>
       <ContactHead />
-      <section className="mt-20">
+      <section className="mt-24">
         <h1 className="mb-3 text-4xl font-bold">Contact Us</h1>
         <hr />
 

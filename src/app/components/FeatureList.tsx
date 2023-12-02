@@ -36,7 +36,7 @@ const FeatureList = () => {
 
   return (
     <div>
-      <h1 className="mb-3 text-4xl font-bold">
+      <h1 className="hidden md:block mb-3 text-4xl font-bold">
         Welcome to EZY Taxis - Book Your Ride With Ease!
       </h1>
       <hr />

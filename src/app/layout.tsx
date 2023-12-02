@@ -70,21 +70,6 @@ export default function RootLayout({
 
           <WhatsappChat />
 
-          {/* <div className="px-10 fixed bottom-0 right-0">
-            <a
-              className="mr-2"
-              href="https://wa.me/447749439999?text=Hi%2C%20I%20want%20to%20place%20a%20booking%20for%20a%20taxi."
-              target="_blank"
-            >
-              <Image
-                src="/whatsapp.svg"
-                alt="whatsapp logo"
-                width={70}
-                height={30}
-              />
-            </a>
-          </div> */}
-
           <TheFooter />
         </div>
       </body>

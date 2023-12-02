@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <main>
       <AboutHead />
-      <section className="mt-20">
+      <section className="mt-24">
         <h1 className="mb-3 text-4xl font-bold">About Us</h1>
         <hr />
         <h2 className="mt-7 text-2xl">
