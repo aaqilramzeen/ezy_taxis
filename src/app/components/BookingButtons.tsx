@@ -8,7 +8,7 @@ const BookingButtons = () => {
 
   return (
     <div className="mt-7 flex flex-col md:flex-row justify-center gap-3">
-      <Button onClick={() => router.push("/")} disabled>
+      <Button onClick={() => router.push("/bookings")} disabled>
         <span className="mr-2">Book via Website</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
