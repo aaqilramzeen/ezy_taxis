@@ -145,7 +145,6 @@ const BookingForm = () => {
           </div>
           <TextInput
             id="drop"
-            ref={dropInputRef}
             value={drop}
             onChange={(e) => setDrop(e.target.value)}
             required
