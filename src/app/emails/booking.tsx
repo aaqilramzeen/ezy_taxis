@@ -21,7 +21,6 @@ const BookingEmail = ({
   drop,
   date,
   time,
-  notes,
 }: Booking) => {
   return (
     <Html>
@@ -88,10 +87,6 @@ const BookingEmail = ({
                 <Text style={paragraph}>
                   <b>Time: </b>
                   {time}
-                </Text>
-                <Text style={paragraph}>
-                  <b>Notes: </b>
-                  {notes}
                 </Text>
               </Column>
             </Row>

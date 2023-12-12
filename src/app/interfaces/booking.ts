@@ -1,4 +1,5 @@
 export interface Booking {
+    id?: string;
     fullName?: string;
     phone?: string;
     email?: string;
@@ -6,5 +7,5 @@ export interface Booking {
     drop?: string; 
     date?: string;
     time?: string;
-    notes?: string;
+    status?: string;
 }

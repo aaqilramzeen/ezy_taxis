@@ -12,10 +12,9 @@ const TopNavigation = () => {
   };
 
   return (
-    <Navbar className="p-3 text-white fixed top-0 w-full z-50 shadow-2xl top-navigation">
+    <Navbar className="p-3 text-white fixed top-0 w-full z-50 shadow-md top-navigation">
       <Navbar.Brand as={Link} href="/">
-        <div className="flex flex-col text-cyan-900">
-          {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
+        <div className="flex flex-col text-black">
           <span className="text-3xl font-bold">
             EZY Taxis
           </span>

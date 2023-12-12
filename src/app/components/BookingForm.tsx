@@ -1,7 +1,7 @@
 "use client";
 
-import { Button, Label, Modal, TextInput, Textarea } from "flowbite-react";
-import db from "../utils/firebase";
+import { Button, Label, Modal, TextInput } from "flowbite-react";
+import { db } from "../utils/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import React, { useState } from "react";
 import { Booking } from "../interfaces/booking";
@@ -15,11 +15,11 @@ const BookingForm = () => {
     drop,
     date,
     time,
-    notes,
+    status,
   }: Booking) {
     try {
       setLoading(true);
-      const docRef = await addDoc(collection(db, "testing"), {
+      await addDoc(collection(db, "bookings"), {
         fullName,
         phone,
         email,
@@ -27,7 +27,7 @@ const BookingForm = () => {
         drop,
         date,
         time,
-        notes,
+        status,
       });
       return true;
     } catch (e) {
@@ -45,9 +45,9 @@ const BookingForm = () => {
   const [drop, setDrop] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [notes, setNotes] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [status] = useState("pending");
 
+  const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -60,8 +60,9 @@ const BookingForm = () => {
       drop,
       date,
       time,
-      notes,
+      status,
     });
+
     if (result) {
       await fetch("/api/email", {
         method: "POST",
@@ -76,9 +77,8 @@ const BookingForm = () => {
           drop,
           date,
           time,
-          notes,
         }),
-      })
+      });
       setOpenModal(true);
     } else {
       alert("There was an error submitting your booking. Please try again.");
@@ -178,19 +178,6 @@ const BookingForm = () => {
           </div>
         </div>
 
-        <div>
-          <div className="mb-2 block">
-            <Label htmlFor="notes" value="Notes" />
-          </div>
-          <Textarea
-            className="resize-none"
-            id="notes"
-            rows={2}
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-          />
-        </div>
-
         <Button
           className="mt-3"
           type="submit"
@@ -276,10 +263,6 @@ const BookingForm = () => {
                 <p>
                   <b>Time: </b>
                   {time}
-                </p>
-                <p>
-                  <b>Notes: </b>
-                  {notes}
                 </p>
               </div>
             </div>

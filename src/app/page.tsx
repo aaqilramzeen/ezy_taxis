@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card } from "flowbite-react";
+import { Card } from "flowbite-react";
 import Testimonials from "./components/Testimonials";
 import Image from "next/image";
 import BookingButtons from "./components/BookingButtons";
@@ -49,73 +49,49 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-20">
-        <p className=" lg:text-center text-3xl font-light leading-relaxed text-slate-800">
+      <section className="-mx-10 md:mt-20 p-5 md:p-0 bg-white md:bg-transparent">
+        <p className="mt-10 md:mt-0 text-center md:text-right lg:text-center text-2xl font-light leading-relaxed text-black hidden">
           <span className="hidden md:inline">Welcome to</span> EZY Taxis — Your
-          Premier Taxi Service in Gatwick, Crawley, Horsham, and Beyond!
+          Trusted Taxi Service in Gatwick, Crawley, Horsham, and Beyond!
         </p>
 
-        <div className="my-5 md:hidden flex flex-col gap-3">
-          <Button>
-            <a className="mr-2" href="tel:01293888999">
-              Call for Gatwick / Crawley
-            </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-              />
-            </svg>
-          </Button>
-
-          <Button>
-            <a className="mr-2" href="tel:01403888999">
-              Call for Horsham & Surrounding
-            </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-              />
-            </svg>
-          </Button>
-
-          <Button onClick={() => router.push("/bookings")}>
-            <span className="mr-2">Make a Booking Online</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </Button>
+        <div className="mt-14 md:mt-0 text-center text-black md:hidden">
+          <p className="text-3xl font-semibold">WELCOME TO</p>
+          <p className="my-2 text-7xl font-bold">EZY Taxis</p>
+          <p className="text-3xl font-semibold">24 / 7 Availability</p>
         </div>
 
-        <p className="mt-3 text-lg">
+        {/* for mobile view */}
+        <div className="m-5 mt-10 md:hidden flex flex-col gap-3">
+          <a
+            className="p-2 rounded-lg border-slate-950 text-black border-2 text-center drop-shadow-xl font-semibold text-xl"
+            href="tel:01293888999"
+          >
+            <span className="font-bold tracking-wider text-2xl">
+              01293 888 999
+            </span>{" "}
+            <br /> Call for Gatwick / Crawley
+          </a>
+
+          <a
+            className="p-2 rounded-lg border-slate-950 text-black border-2 text-center drop-shadow-xl font-semibold text-lg"
+            href="tel:01403888999"
+          >
+            <span className="font-bold tracking-wider text-2xl">
+              01403 888 999
+            </span>{" "}
+            <br /> Call for Horsham & Surrounding
+          </a>
+
+          <div
+            className="px-2 py-5 rounded-lg border-slate-950 text-black border-2 text-center cursor-pointer drop-shadow-xl font-semibold text-xl"
+            onClick={() => router.push("/bookings")}
+          >
+            Make a Booking Online
+          </div>
+        </div>
+
+        <p className="mt-3 text-lg text-black text-center md:text-right">
           At EZY Taxis, we take pride in providing more than just
           transportation; we deliver an unparalleled experience. Our commitment
           to reliability, affordability, and 24/7 availability sets us apart as

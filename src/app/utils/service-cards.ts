@@ -69,6 +69,7 @@ export const serviceCards = [
     keywords: [
       "Student Transportation",
       "School Transportation Services",
+      "Council Approved Transport Solutions"
     ],
   },
 ];

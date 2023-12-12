@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   try {
     const data = await resend.emails.send({
       from: "EZY Taxis Bookings <mail@ezytaxis.co.uk>",
-      to: ["aaqil.ramzeen@gmail.com"],
+      to: ["contactezytaxis@gmail.com", "bookezytaxis@gmail.com"],
       subject: "New Booking",
       react: BookingEmail({ ...body }),
     });
